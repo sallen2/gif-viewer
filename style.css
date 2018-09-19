@@ -1,0 +1,28 @@
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+body{
+    background-color: rgb(95, 94, 94);
+}
+
+.buttonStyle{
+    margin: 1%;
+    background-color: rgb(23, 65, 90);
+    border: solid 2px rgb(58, 58, 58)
+}
+
+.imgStyle{
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 5px;
+    margin-top: 30px;
+    width: 260px;
+    height: 200px;
+}
+p{
+    position: relative;
+    bottom: 95px;
+    right: 260px;
+    display: inline;
+}
