@@ -1,12 +1,29 @@
 let gifArr = ['cat','dog','bird','kanye west','michael jordan','kobe','Dragon Ball'];
-
+let slideUp = {
+    distance: '2000%',
+    origin: 'bottom',
+    opacity: null
+};
+let slideUp2 = {
+    distance: '2000%',
+    origin: 'bottom',
+    delay: 200,
+    opacity: null
+};
+let slideUp3 = {
+    distance: '2000%',
+    origin: 'bottom',
+    delay: 400,
+    opacity: null
+};
 function printButtons(){
     gifArr.forEach(function(arr){
         let button = $('<button>');
         button.text(arr);
-        button.addClass('btn btn-primary')
+        button.addClass('btn btn-primary reveal load-hidden')
         button.addClass('buttonStyle')
         $('.appendHere').append(button);
+        ScrollReveal().reveal('.reveal', slideUp);
     })
 }
 function addButton(){
@@ -15,7 +32,7 @@ function addButton(){
             let textInput = $('.input').val()
             $('.input').val('');
             let button = $('<button>');
-            button.addClass('buttonStyle btn btn-primary')
+            button.addClass('buttonStyle btn btn-primary Reveal');
             button.text(textInput);
             $('.appendHere').append(button);
         }
@@ -60,6 +77,8 @@ function playOrPauseGif(){
 }
 $(document).ready(function(){
     printButtons()
+    ScrollReveal().reveal('.form-control', slideUp2);
+    ScrollReveal().reveal('.commentReveal', slideUp3);
     addButton();
     clickButton();
     playOrPauseGif();
