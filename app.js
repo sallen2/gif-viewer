@@ -26,7 +26,7 @@ function clickButton(){
         $('.imgSize').remove();
         $('p').remove()
         let button = $(this);
-        let url = `https://api.giphy.com/v1/gifs/search?q=${button.text()}&api_key=ZvkvFY9ajWn9rD4p5XqB5tKiNx3cPtAJ&limit=10`
+        let url = `http://api.giphy.com/v1/gifs/search?q=${button.text()}&api_key=ZvkvFY9ajWn9rD4p5XqB5tKiNx3cPtAJ&limit=10`
         $.getJSON(url)
         .done(function(gif){
             console.log(gif);
