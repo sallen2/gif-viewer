@@ -11,7 +11,7 @@ let slideUp2 = {
     opacity: null
 };
 let slideUp3 = {
-    distance: '2000%',
+    distance: '3000%',
     origin: 'bottom',
     delay: 400,
     opacity: null
